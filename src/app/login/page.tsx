@@ -25,7 +25,7 @@ const Login = () => {
     }else if(data.password.length >=0){
         setPasswordValid(false)
     }
-    if(data.email.length >0 || data.password.length >0){
+    if(data.email.length >0 && data.password.length >0){
         router.push('/')
     }
   }

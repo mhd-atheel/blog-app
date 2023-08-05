@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-const SignUp = () => {
+const Signup = () => {
     const router = useRouter();
     const [data, setData] = useState({
         name: "",
@@ -113,4 +113,4 @@ const SignUp = () => {
     );
 };
 
-export default SignUp;
+export default Signup;

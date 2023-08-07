@@ -15,8 +15,24 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: [true, "Please provide a password"],
     },
+    bio: {
+        type: String,
+        default:'No bio',
+        unique: false,
+    },
+    lives: {
+        type: String,
+        default:'No living',
+        unique: false,
+    },
+    work: {
+        type: String,
+        default:'No work',
+        unique: false,
+    },
 
-})
+
+},{timestamps:true})
 
 
 const User = mongoose.models.users || mongoose.model("users", userSchema);
